@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theophilus Kay - Graphic & Web Designer | Ghana</title>
+  <meta name="description" content="Professional graphic and web designer based in Sunyani, Ghana. Specializing in UI/UX design, web development, and brand identity. Theo Kay creates stunning digital experiences that inspire and engage.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollSmoother.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/Draggable.min.js"></script>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loading">
+    <div class="loading-spinner"></div>
+  </div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container nav-container">
+      <a href="#" class="logo" aria-label="Home">Theo<span>Kay</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero" class="active" aria-current="page">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Creating Digital Experiences That <span class="hero-highlight">Inspire</span></h1>
+        <p>I'm Theophilus Kay, a graphic & web designer passionate about creating stunning visuals and functional websites that tell your brand's story.</p>
+        <div class="hero-btns">
+          <a href="#portfolio" class="btn">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-shape shape-1"></div>
+    <div class="hero-shape shape-2"></div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-image">
+          <img src="images/kay.jpg" alt="Theophilus Kay">
+        </div>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>Hello! I'm Theophilus Kay, a passionate graphic and web designer based in Sunyani, Ghana. With over 5 years of experience in the creative industry, I specialize in creating visually stunning and user-friendly digital experiences.</p>
+          <p>My design philosophy centers around simplicity, functionality, and emotional connection. I believe that great design not only looks beautiful but also solves problems and enhances user experiences.</p>
+          <div class="skills">
+            <div class="skill-item">
+              <h4>UI/UX Design <span>85%</span></h4>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <h4>Web Development <span>85%</span></h4>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <h4>Brand Identity <span>90%</span></h4>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <h4>Motion Graphics <span>75%</span></h4>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <div class="section-title-center">
+        <h2>My Services</h2>
+        <p>I offer a range of creative services to help your brand stand out in the digital landscape.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>Web Design</h3>
+          <p>Creating responsive, user-friendly websites that not only look great but also drive conversions and engagement.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <h3>Graphic Design</h3>
+          <p>Designing compelling visual content including logos, brochures, social media graphics, and more.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>Crafting intuitive user interfaces and experiences that keep users engaged and satisfied.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-bullhorn"></i>
+          </div>
+          <h3>Brand Identity</h3>
+          <p>Developing cohesive brand identities that communicate your values and resonate with your audience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="portfolio-header">
+        <h2>My Portfolio</h2>
+        <p>A selection of my recent design projects</p>
+      </div>
+
+      <div class="portfolio-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Design</button>
+        <button class="filter-btn" data-filter="graphic">Graphic Design</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-item" data-category="web">
+          <img src="images/E-commerce.jpg" alt="E-commerce website design project" class="portfolio-img">
+          <div class="portfolio-overlay">
+            <h3>E-commerce Website</h3>
+            <p>Fully responsive online store with custom UI elements</p>
+            <a href="#" class="btn btn-outline">View Project</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="graphic">
+          <img src="images/logo design.jpg" alt="Logo design project" class="portfolio-img">
+          <div class="portfolio-overlay">
+            <h3>Logo Design</h3>
+            <p>Modern logo for a tech startup, focusing on innovation</p>
+            <a href="#" class="btn btn-outline">View Project</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="web">
+          <img src="images/porfolio website.jpg" alt="Portfolio website design project" class="portfolio-img">
+          <div class="portfolio-overlay">
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio showcasing my design work and skills</p>
+            <a href="#" class="btn btn-outline">View Project</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="branding">
+          <img src="images/Brand Identity 11.jpg" alt="Brand identity project" class="portfolio-img">
+          <div class="portfolio-overlay">
+            <h3>Brand Identity</h3>
+            <p>Complete brand identity for a local business, including logo and marketing materials</p>
+            <a href="#" class="btn btn-outline">View Project</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="branding">
+          <img src="images/Elements+of+Social+Media+Branding.webp" alt="Social media branding project" class="portfolio-img">
+          <div class="portfolio-overlay">
+            <h3>Social Media Branding</h3>
+            <p>Complete social media branding for a tech startup</p>
+            <a href="#" class="btn btn-outline">View Project</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="branding">
+          <img src="images/Corporate-Branding-Strategy-Defined.webp" alt="Corporate branding project" class="portfolio-img">
+          <div class="portfolio-overlay">
+            <h3>Corporate Branding</h3>
+            <p>Complete brand identity for a tech startup</p>
+            <a href="#" class="btn btn-outline">View Project</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="graphic">
+          <img src="images/cylla banner.jpg" alt="Poster design project" class="portfolio-img">
+          <div class="portfolio-overlay">
+            <h3>Poster Design</h3>
+            <p>Promotional poster for a local event, focusing on vibrant colors</p>
+            <a href="#" class="btn btn-outline">View Project</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="web">
+          <img src="images/landing page.jpg" alt="Landing page design project" class="portfolio-img">
+          <div class="portfolio-overlay">
+            <h3>Landing Page Design</h3>
+            <p>High-converting landing page for a marketing campaign</p>
+            <a href="#" class="btn btn-outline">View Project</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="graphic">
+          <img src="images/mobile UI.webp" alt="Mobile app UI design project" class="portfolio-img">
+          <div class="portfolio-overlay">
+            <h3>Mobile App UI</h3>
+            <p>Fitness tracking application interface design</p>
+            <a href="#" class="btn btn-outline">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="testimonials-header section-title-center">
+        <h2>Client Testimonials</h2>
+        <p>What people say about working with me</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"Theo transformed our outdated website into a modern, user-friendly platform. His attention to detail and creative approach exceeded our expectations."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah Johnson">
+            </div>
+            <div class="author-info">
+              <h4>Sarah Johnson</h4>
+              <p>Marketing Director, TechGrow</p>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"Working with Theophilus on our rebranding was a game-changer. He captured our vision perfectly and delivered a brand identity that truly represents who we are."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Kennedy Mesvic">
+            </div>
+            <div class="author-info">
+              <h4>Kennedy Mesvic</h4>
+              <p>CEO, GreenLife Organics</p>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"Theo's web design skills are exceptional. He created an e-commerce site that not only looks beautiful but also increased our conversion rate by 40%."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Anna Benson">
+            </div>
+            <div class="author-info">
+              <h4>Anna Benson</h4>
+              <p>Founder, FashionHub GH</p>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"As a startup, we needed a designer who could understand our vision. Theo delivered beyond our expectations with a clean, modern UI that users love."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="David Smith">
+            </div>
+            <div class="author-info">
+              <h4>David Smith</h4>
+              <p>Product Manager, FinTech Solutions</p>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2>Get In Touch</h2>
+          <p>Have a project in mind? Let's collaborate to bring your vision to life.</p>
+
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Location</h4>
+              <p>Sunyani, Ghana</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Email</h4>
+              <p>theophilusdartey@live.com</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Phone</h4>
+              <p>+233 534 121 560</p>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://tiktok.com/@theokay21" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://linkedin.com/in/theophilus-dartey-b20a8381" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h2>Contact Me</h2>
+          <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+          <form id="contactForm"  action="https://formspree.io/f/xyzjlwoo" method="POST">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <textarea name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-accent">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section id="map">
+    <div class="container">
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126828.1453277491!2d-2.3693257999999997!3d7.3360204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdaa1a0b2d1d5a3%3A0x3f0a5c9e6c1f3b4c!2sSunyani%2C%20Ghana!5e0!3m2!1sen!2sus!4v1658765432100!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <a href="#" class="footer-logo" aria-label="Home">Theo<span>Kay</span></a>
+        <p>Creating meaningful digital experiences through thoughtful design.</p>
+
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="social-links">
+          <a href="https://tiktok.com/@theokay21" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a href="https://linkedin.com/in/theophilus-dartey-b20a8381" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+        <p class="copyright">&copy; 2025 Theophilus Kay. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+ <script src="script.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>
